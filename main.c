@@ -167,7 +167,7 @@ static const char *fragment_shader_text =
     // "sum.z += 1;\n"
     "fragment = color;\n"
     //"fragment = color * mvp * sum;\n"
-    // "fragment = color * mvp * sum2 / 1.75;\n"
+    //"fragment = color * mvp * sum2 / 1.75;\n"
     // "fragment = sum;\n"
 
     "}\n";
