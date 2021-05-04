@@ -1,0 +1,67 @@
+% To add this template to the main.tex file, just add the command "\include{titlePageSLU} after "\begin{docuemnt}" in the main.tex file
+
+
+% In this segment, enter the desired data to be shown at the title page
+\newcommand{\thesisAuthora}{Στεφανάτου Νεφέλη}
+\newcommand{\thesisAuthorb}{Λάζαρο Κων/νο-Παναγιώτη}
+
+\newcommand{\thesisTitle}{ΔΙΔΙΑΣΤΑΤΗ ΣΚΗΝΗ }
+\newcommand{\thesisSubTitle}{ΕΡΓΑΣΙΑ ΓΙΑ ΤΟ ΜΑΘΗΜΑ ΓΡΑΦΙΚΗ ΥΠΟΛΟΓΙΣΤΩΝ }
+\newcommand{\professor}{Δρακόπουλος Βασίλειος}
+\newcommand{\academicYear}{2020-2021}
+
+%------------------------------------------------------------------------------
+\begin{titlepage}
+\thispagestyle{empty}
+%\myfont
+
+% Use this line of code if both SLU loggo and company/other institution loggo is desired. The positions are possible to change with the \hspace and \vspace syntax.
+
+\begin{figure}
+\centering
+\vspace{-2cm}
+    \hspace*{0cm}\includegraphics[width = 0.2\textwidth]{uth_logo.png}\hspace*{0cm}
+\end{figure}
+
+
+\definecolor{uthred}{RGB}{122, 8, 44}
+\centering 
+\textcolor{uthred} {\large \textbf{ΠΑΝΕΠΙΣΤΗΜΙΟ ΘΕΣΣΑΛΙΑΣ}}\\
+\vspace{0.2cm}
+\textcolor{uthred}{\textbf{ΤΜΗΜΑ ΠΛΗΡΟΦΟΡΙΚΗΣ ΜΕ ΕΦΑΡΜΟΓΕΣ ΣΤΗ ΒΙΟΪΑΤΡΙΚΗ}}\\
+
+\rule[-0.2cm]{\linewidth}{0.5pt}
+
+\vspace{3cm}
+\par
+\noindent
+\Huge
+\centering
+\textbf{\thesisTitle}\\
+\vspace{0.2cm}
+\small
+\par
+\noindent
+\thesisSubTitle\\
+%\rule[0.3cm]{\linewidth}{2pt}
+\Large
+
+
+\vspace{2cm}
+\noindent
+\Large
+ΕΚΠΟΝΗΘΗΚΕ ΑΠΟ ΤΟΥΣ:\\
+\textbf{\thesisAuthora}\\
+\textbf{\thesisAuthorb}\\
+\vspace{3 cm}
+
+\par \noindent
+\Large
+ΔΙΔΑΣΚΩΝ ΚΑΘΗΓΗΤΗΣ:\\ \textbf{\professor}\\
+\vspace{2.5cm}
+
+\rule[0.2cm]{\linewidth}{0.5pt}
+
+ΑΚΑΔΗΜΑΪΚΟ ΕΤΟΣ: \academicYear
+
+\end{titlepage}

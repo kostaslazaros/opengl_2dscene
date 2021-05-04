@@ -1,9 +1,7 @@
 #include <glad/gl.h>
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
-
 #include "linmath.h"
-
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
@@ -166,8 +164,8 @@ static const char *fragment_shader_text =
     // "sum.a = 1.0;\n"
     // "sum.z += 1;\n"
     "fragment = color;\n"
-    //"fragment = color * mvp * sum;\n"
-    //"fragment = color * mvp * sum2 / 1.75;\n"
+    // "fragment = color * mvp * sum;\n"
+    // "fragment = color * mvp * sum2;\n"
     // "fragment = sum;\n"
 
     "}\n";
@@ -184,7 +182,7 @@ static void key_callback(GLFWwindow *window, int key, int scancode, int action, 
 
 int main(void){
 
-    int width = 3 * 200, height = 3 * 200;
+    int width = 3* 200, height = 3 * 200;
 
     glfwSetErrorCallback(error_callback);
 
@@ -195,7 +193,7 @@ int main(void){
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow *window = glfwCreateWindow(width, height, "OpenGL Triangle", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(width, height, "OpenGL 2D Scene", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
