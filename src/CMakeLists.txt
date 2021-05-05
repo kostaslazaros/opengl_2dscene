@@ -8,7 +8,7 @@ set(GLAD_GL "${GLFW_SOURCE_DIR}/deps/glad/gl.h"
             "${GLFW_SOURCE_DIR}/deps/glad_gl.c"
 )
 
-add_executable(${PROJECT_NAME} main.c ${GLAD_GL})
+add_executable(${PROJECT_NAME} WIN32 main.c ${GLAD_GL})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 

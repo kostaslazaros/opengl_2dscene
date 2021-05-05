@@ -1,0 +1,15 @@
+Download and install mingw: https://sourceforge.net/projects/mingw-w64/
+
+Download cmake: https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2-windows-x86_64.zip
+
+extract cmake inside mingw/ming32 directory . Rename cmake-3.20.2-windows-x86_64 to cmake.
+
+edit mingw-w64.bat and add to path E:\prg\mingw\mingw32\cmake\bin
+
+after edit path should look like:
+
+set PATH=E:\prg\mingw\mingw32\bin;E:\prg\mingw\mingw32\cmake\bin;%PATH%
+
+run mingw-w64.bat and goto the project src path
+
+run conf_build_run.bat
